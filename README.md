@@ -1,4 +1,4 @@
-# SimpleReactStarter
+# React with Redux
 
 This Project is a part of IS 6850-005 Special Topics in IS
 

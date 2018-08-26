@@ -23,3 +23,5 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 > npm install
 > npm start
 ```
+
+Open browser -> [click](http://localhost:8080) here

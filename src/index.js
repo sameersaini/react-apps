@@ -26,7 +26,7 @@ class App extends Component {
     handleSearch(value, selSelected = false) {
         YTSearch({ key: YOUTUBE_API_KEY, term: value }, (videos) => {
             const newState = { videos };
-            if (selSelected) { newState[selectedVideo] = videos[0]; }
+            if (selSelected) { newState.selectedVideo = videos[0]; }
 
             this.setState(newState);
         });

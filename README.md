@@ -1,23 +1,23 @@
-# React with Redux
+# ReduxSimpleStarter
 
-This Project is a part of IS 6850-005 Special Topics in IS
-
-Course being followed is [Modern React with Redux](https://www.udemy.com/react-redux/)
-
-#### Description
-
-1. Intro to React
-2. Ajax requests with react
-3. Modeling Application State with React
-4. Managing App State with React
-5. Intermediate Redux: Middleware
-6. React router + Redux Form
-7. RallyCoding: Misc other features. 
-
+Interested in learning [Redux](https://www.udemy.com/react-redux/)?
 
 ### Getting Started
 
+There are two methods for getting started with this repo.
+
+#### Familiar with Git?
 Checkout this repo, install dependencies, then start the gulp process with the following:
+
+```
+> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
+> cd ReduxSimpleStarter
+> npm install
+> npm start
+```
+
+#### Not Familiar with Git?
+Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
 
 ```
 > npm install

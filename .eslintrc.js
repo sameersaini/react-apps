@@ -18,7 +18,8 @@ module.exports = {
         "no-prototype-builtins":0,
         "array-callback-return":0, //it forbades the use of filter map
         "indent":[2,4],//It just give four spaces instead of two.I have customize it for proper indentation
-        "newline-per-chained-call":0
+        "newline-per-chained-call":0,
+        "class-methods-use-this":0,
 
     },
     "plugins": [

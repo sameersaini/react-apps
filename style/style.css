@@ -1,0 +1,19 @@
+.postForm {
+    border: 1px solid #0275d8;
+    border-radius: 4px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.label {
+    margin-bottom: 0;
+    border-radius: 0 !important;
+}
+
+.label-large {
+    font-size: large !important;
+}
+
+.text-input {
+    border-radius: 0 !important;
+}

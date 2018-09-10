@@ -46,7 +46,6 @@ class WeatherList extends Component {
 
 
 function mapStateToProps({ weather, error }) {
-    console.log({ weather, error });
     return { weather, error };
 }
 

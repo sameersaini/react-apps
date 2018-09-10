@@ -1,20 +1,17 @@
-import { FETCH_WEATHER } from '../actions/index';
+import { WEATHER_ERROR, HIDE_WEATHER_ERROR } from '../actions/index';
 
 export default function reducerError(state = {}, action) {
-    console.log(action);
-    if (action
-        && action.error
-        && action.payload
-        && action.payload.response
-        && action.payload.response.data
-    ) {
-        switch (action.type) {
-        case FETCH_WEATHER:
-            return { ...state, weatherError: action.payload.response.data.message };
-        default:
-            return state;
+    switch (action.type) {
+    case WEATHER_ERROR:
+        if (action.payload && action.payload.status !== '200') {
+            state = { ...state, weatherError: JSON.parse(action.payload.request.response).message };
         }
-    } else {
-        return { ...state, weatherError: '' };
+        break;
+    case HIDE_WEATHER_ERROR:
+        state = { ...state, weatherError: '' };
+        break;
+    default:
+        break;
     }
+    return state;
 }

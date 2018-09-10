@@ -5,7 +5,7 @@ function checkDuplicate(state, payload) {
 }
 
 export default function reducerWeather(state = [], action) {
-    if (action.error) {
+    if (action.payload && action.payload.status !== 200) {
         return state;
     }
     if (action

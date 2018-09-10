@@ -17,3 +17,8 @@
 .text-input {
     border-radius: 0 !important;
 }
+
+.list-group-item:hover{
+    background-color: #eceeef;
+    cursor: pointer;
+}

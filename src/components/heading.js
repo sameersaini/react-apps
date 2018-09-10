@@ -5,7 +5,7 @@ export default function heading(props) {
         <div>
             <hr />
             <div className="text-primary">
-                <h4>{props.text}</h4>
+                <h2>{props.text}</h2>
             </div>
             <hr />
         </div>

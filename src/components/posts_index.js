@@ -21,7 +21,9 @@ class PostsIndex extends Component {
     renderPosts() {
         return _.filter(this.props.posts, post => post.title).map(post => (
             <li className="list-group-item" key={post.id}>
-                {post.title}
+                <Link to={`/posts/${post.id}`}>
+                    {post.title}
+                </Link>
             </li>
         ));
     }
@@ -30,7 +32,7 @@ class PostsIndex extends Component {
         return (
             <div>
                 <Heading text="Posts"/>
-                <div className="text-xs-right">
+                <div className="text-xs-right" style={{ marginBottom: '10px' }}>
                     <Link className="btn btn-primary" to='/posts/new'>
                         Add Post
                     </Link>

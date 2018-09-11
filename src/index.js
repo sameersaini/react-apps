@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
+import App from './components/app';
+import reducers from './reducers';
 
-// create a new component which contains HTML
-const App = () => {
-    return (
-        <div>
-            Hello world
-        </div>
-    );
-};
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
-// generate the html and put it onto the page.
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Provider store={createStoreWithMiddleware(reducers)}>
+        <App />
+    </Provider>,
+    document.querySelector('.container')
+);

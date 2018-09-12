@@ -12,9 +12,13 @@ const URL = `${ROOT_URL}?key=${key}`;
 export function fetchPosts() {
     const request = axios.get(URL);
 
-    return {
-        type: FETCH_POSTS,
-        payload: request,
+    return (dispatch) => {
+        request.then((data) => {
+            dispatch({
+                type: FETCH_POSTS,
+                payload: data,
+            });
+        });
     };
 }
 
@@ -23,18 +27,24 @@ export function savePost(values, callback) {
         callback();
     });
 
-    return {
-        type: SAVE_POSTS,
-        payload: request,
+    return (dispatch) => {
+        dispatch({
+            type: SAVE_POSTS,
+            payload: request,
+        });
     };
 }
 
 export function fetchPost(id) {
     const request = axios.get(`${ROOT_URL}/${id}?key=${key}`);
 
-    return {
-        type: FETCH_POST,
-        payload: request,
+    return (dispatch) => {
+        request.then((data) => {
+            dispatch({
+                type: FETCH_POST,
+                payload: data,
+            });
+        });
     };
 }
 
@@ -43,8 +53,10 @@ export function deletePost(id, callback) {
         callback();
     });
 
-    return {
-        type: DELETE_POST,
-        payload: id,
+    return (dispatch) => {
+        dispatch({
+            type: DELETE_POST,
+            payload: id,
+        });
     };
 }

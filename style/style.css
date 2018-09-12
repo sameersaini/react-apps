@@ -22,3 +22,21 @@
     background-color: #eceeef;
     cursor: pointer;
 }
+
+.post-list-enter {
+    opacity: 0.01;
+}
+
+.post-list-enter-active {
+    opacity: 1;
+    transition: 500ms ease-in all;
+}
+
+.post-list-leave {
+    opacity: 1;
+}
+
+.post-list-leave-active {
+    opacity: 0.01;
+    transition: 500ms ease-in all;
+}

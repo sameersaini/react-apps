@@ -2,6 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { fetchPosts } from '../actions/index';
 import Heading from './heading';
 
@@ -38,7 +39,13 @@ class PostsIndex extends Component {
                     </Link>
                 </div>
                 <ul className="list-group">
-                    {this.renderPosts()}
+                    <ReactCSSTransitionGroup
+                        transitionName="post-list"
+                        transitionEnterTimeout={500}
+                        transitionLeavetimeout={500}
+                    >
+                        {this.renderPosts()}
+                    </ReactCSSTransitionGroup>
                 </ul>
             </div>
         );

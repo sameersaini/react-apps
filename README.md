@@ -51,7 +51,7 @@ For production build, change start and build run scripts in package.json as
 ```
 
 By default, create react-app will build map files also. These map files maps the entire source code and entire original code is 
-visible to the client on source inspect in the browser. Ideally, in a production env , only mified files should be visible to the 
+visible to the client on source inspect in the browser. Ideally, in a production env, only minified files should be visible to the 
 client. So, to achieve this, I have changed the build script in the package.json file to removed the map files after build creation.
 
 To run the production server

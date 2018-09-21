@@ -1,25 +1,15 @@
-# SimpleReactStarter
+# AWS Learning
 
 This Project is a part of IS 6850-005 Special Topics in IS
 
-Course being followed is [Modern React with Redux](https://www.udemy.com/react-redux/)
+Course being followed is [Amazon Web Services Certified 2018](https://www.udemy.com/aws-certified-associate-architect-developer-sysops-admin/learn/v4/overview)
 
 #### Description
 
-1. Intro to React
-2. Ajax requests with react
-3. Modeling Application State with React
-4. Managing App State with React
-5. Intermediate Redux: Middleware
-6. React router + Redux Form
-7. RallyCoding: Misc other features. 
+1. AWS Certified Cloud Practitioner
+2. AWS Certified Associate Essentials
+3. AWS Certified Developer Associate - Final Preparation
+4. AWS Certified Architect/Sysops Essentials
+5. AWS Certitifed Solutions Architect Essentials - Final Preparation
+6. AWS Certified SysOps Administrator Associate - Final Preparation
 
-
-### Getting Started
-
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
-```
-> npm install
-> npm start
-```
